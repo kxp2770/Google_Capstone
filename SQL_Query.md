@@ -8,7 +8,7 @@ CREATE TABLE trip_data (
   rideable_type varchar(20),
   start_at datetime,
   end_at datetime,
-  ride_length varchar(100),
+  ride_length time,
   day_of_week varchar(20),
   ride_month varchar(20),
   start_station_name varchar(100),
