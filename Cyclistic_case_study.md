@@ -51,21 +51,21 @@ offer insights to stakeholders on recommended conversion program(s) to increase 
 <br/><br/>
 ***Data***
 
-All data used in this analysis is Cyclistic first party sourced gathered from their customers and can be found [here](https://divvy-tripdata.s3.amazonaws.com/index.html).
+All data used in this analysis is Cyclistic first party sourced gathered from their customers and can be found **[here](https://divvy-tripdata.s3.amazonaws.com/index.html)**.
 Specific datasets used can be downloaded in the following: 
-[2022-04](https://divvy-tripdata.s3.amazonaws.com/202204-divvy-tripdata.zip), 
-[2022-03](https://divvy-tripdata.s3.amazonaws.com/202203-divvy-tripdata.zip), 
-[2022-02](https://divvy-tripdata.s3.amazonaws.com/202202-divvy-tripdata.zip), 
-[2022-01](https://divvy-tripdata.s3.amazonaws.com/202201-divvy-tripdata.zip),
-[2021-12](https://divvy-tripdata.s3.amazonaws.com/202112-divvy-tripdata.zip),
-[2021-11](https://divvy-tripdata.s3.amazonaws.com/202111-divvy-tripdata.zip),
-[2021-10](https://divvy-tripdata.s3.amazonaws.com/202110-divvy-tripdata.zip),
-[2021-09](https://divvy-tripdata.s3.amazonaws.com/202109-divvy-tripdata.zip),
-[2021-08](https://divvy-tripdata.s3.amazonaws.com/202108-divvy-tripdata.zip),
-[2021-07](https://divvy-tripdata.s3.amazonaws.com/202107-divvy-tripdata.zip),
-[2021-06](https://divvy-tripdata.s3.amazonaws.com/202106-divvy-tripdata.zip),
-[2021-05](https://divvy-tripdata.s3.amazonaws.com/202105-divvy-tripdata.zip).
-The data has been made available by Motivate Internation Inc. under this [license](https://ride.divvybikes.com/data-license-agreement). Though this is first party source, note
+**[2022-04](https://divvy-tripdata.s3.amazonaws.com/202204-divvy-tripdata.zip)**, 
+**[2022-03](https://divvy-tripdata.s3.amazonaws.com/202203-divvy-tripdata.zip)**, 
+**[2022-02](https://divvy-tripdata.s3.amazonaws.com/202202-divvy-tripdata.zip)**, 
+**[2022-01](https://divvy-tripdata.s3.amazonaws.com/202201-divvy-tripdata.zip)**,
+**[2021-12](https://divvy-tripdata.s3.amazonaws.com/202112-divvy-tripdata.zip)**,
+**[2021-11](https://divvy-tripdata.s3.amazonaws.com/202111-divvy-tripdata.zip)**,
+**[2021-10](https://divvy-tripdata.s3.amazonaws.com/202110-divvy-tripdata.zip)**,
+**[2021-09](https://divvy-tripdata.s3.amazonaws.com/202109-divvy-tripdata.zip)**,
+**[2021-08](https://divvy-tripdata.s3.amazonaws.com/202108-divvy-tripdata.zip)**,
+**[2021-07](https://divvy-tripdata.s3.amazonaws.com/202107-divvy-tripdata.zip)**,
+**[2021-06](https://divvy-tripdata.s3.amazonaws.com/202106-divvy-tripdata.zip)**,
+**[2021-05](https://divvy-tripdata.s3.amazonaws.com/202105-divvy-tripdata.zip)**.
+The data has been made available by Motivate Internation Inc. under this **[license](https://ride.divvybikes.com/data-license-agreement)**. Though this is first party source, note
 that data-privacy issues prohibit you from using riders' personally identifible information. This means that you won't be able to connect pass purchases to credit card
 numbers to determine if casual riders live in the Cyclistic service area or if they have puchased multiple single passes.
 
@@ -78,7 +78,8 @@ Power query is used to organize data by:
 * Calculated day of the week for each ride.
 * Calculated month of each ride.
 
-All datasets were consolidated into MySQL for ease of data transformation as well has having all data in one place.
+All datasets were consolidated into MySQL for ease of data transformation and performing aggregate functions as well has having all data in one place.    
+All SQL queries are located **[here](https://github.com/kxp2770/Google_Capstone/blob/main/SQL_Query.md)**.
 
 
 
