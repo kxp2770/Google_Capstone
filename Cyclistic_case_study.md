@@ -100,3 +100,12 @@ All new aggregated data tables were exported into csv files for data viz usages 
 <br/><br/>
 ***Summary***
 
+The goal is to provide insights on the differences from casual and memeber riders and to recommend conversion program(s) to increase the number of annual memberships. 
+The table differentiating the two by days does not show a clear different that can suggest any programs to convert to annual members, but does show that other casual passes could be offered (e.g., weekend passes) as we have an about a 2 times increase of casual riders from the weekdays into Saturday and Sunday. This is most likely due to the service used as an recreational purposes on weekends. Our members stay consistent throughout the days of the week as they are most likely residents of chicago and using the service as a transportation needs to and from work, shopping needs, etc.
+
+The table for total rides for each month paints a better picture that we can use to recommend conversion program(s). We see a dramatic increase of total rides from not only members, but casuals alike during the summer months of the year. Starting from May through October, we see anywhere between a 3-10x increase compared to the other six months in our casual riders. This is most likely due to kids being out of school during most of those six months as well as tourists coming to Chicago. 
+
+Based on this analysis, the only recommendations I can give to increase our annal memberships/profits are to:
+* Create a push for annual memeberships during the months of increase riders (May, June, July, August, September, and October)    
+
+The push should be targeted at creating bundles/deals that work with hotels and home-sharing apps as well as schools and universities to hit our casual riders (i.e., tourists and children).
