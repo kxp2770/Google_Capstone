@@ -80,9 +80,23 @@ Power query is used to organize data by:
 * Calculated ride time (duration of each ride).
 * Calculated day of the week for each ride.
 
+
+
 All datasets were then consolidated into MySQL for ease of data transformation and performing aggregate functions as well has having all datasets combined in one place.    
 All SQL queries are located **[here](https://github.com/kxp2770/Google_Capstone/blob/main/SQL_Query.md)**.    
-All new aggregated data tables were exported into csv files for data viz usages in Tableau.
+While working with the data in MySQL, the column member_casual which stores whether or not the ride was by a member or a casual individual had carriage returns in column that was missed during excel cleaning process. When running queries to determine member counts, values returned as 0 which brought up the idea that data is not always fully cleaned.
+All new aggregated data tables were exported into csv files for data viz usages in Tableau. Tables created are:
+[total rides by membership by days](https://public.tableau.com/views/TotalRidesbyMembershipStatusbyDay/Dashboard2?:language=en-US&:display_count=n&:origin=viz_share_link) and 
+[total rides by membership by months](https://public.tableau.com/views/TotalRidesbyMembershipStatusbyMonth/Dashboard1?:language=en-US&:display_count=n&:origin=viz_share_link)
 
 
+<div class='tableauPlaceholder' id='viz1652124118444' style='position: relative'><noscript><a href='#'><img alt='Dashboard 2 ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;To&#47;TotalRidesbyMembershipStatusbyDay&#47;Dashboard2&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='TotalRidesbyMembershipStatusbyDay&#47;Dashboard2' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;To&#47;TotalRidesbyMembershipStatusbyDay&#47;Dashboard2&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en-US' /><param name='filter' value='publish=yes' /></object></div>               
+
+
+
+
+<div class='tableauPlaceholder' id='viz1652124009978' style='position: relative'><noscript><a href='#'><img alt='Dashboard 1 ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;To&#47;TotalRidesbyMembershipStatusbyMonth&#47;Dashboard1&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='TotalRidesbyMembershipStatusbyMonth&#47;Dashboard1' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;To&#47;TotalRidesbyMembershipStatusbyMonth&#47;Dashboard1&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en-US' /></object></div>             
+
+<br/><br/>
+***Summary***
 
