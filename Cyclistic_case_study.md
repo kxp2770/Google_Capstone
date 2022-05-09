@@ -72,14 +72,17 @@ numbers to determine if casual riders live in the Cyclistic service area or if t
 To keep the analysis as current as possible, only the past 12 months were used.    
 Microsoft Excel power query is used as the files already came in a .csv format.    
 Power query is used to organize data by:
-* Combined 2022 data set together.
-* Removing all columns not needed for the business task (e.g., start_lat, start_lng, end_lat, end_lng, start_station_id, and end_station_id)
+* Removed all columns not needed for the business task (e.g., start_lat, start_lng, end_lat, end_lng, start_station_id, and end_station_id)
+* Removed any blank rows
+* Removed error cells
+* Removed any leading and trailing whitespaces and line breaks
+* Removed any duplicate rows
 * Calculated ride time (duration of each ride).
 * Calculated day of the week for each ride.
-* Calculated month of each ride.
 
-All datasets were consolidated into MySQL for ease of data transformation and performing aggregate functions as well has having all data in one place.    
-All SQL queries are located **[here](https://github.com/kxp2770/Google_Capstone/blob/main/SQL_Query.md)**.
+All datasets were then consolidated into MySQL for ease of data transformation and performing aggregate functions as well has having all datasets combined in one place.    
+All SQL queries are located **[here](https://github.com/kxp2770/Google_Capstone/blob/main/SQL_Query.md)**.    
+All new aggregated data tables were exported into csv files for data viz usages in Tableau.
 
 
 
