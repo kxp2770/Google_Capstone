@@ -7,14 +7,14 @@ USE case_study;
 # Table created without PK to increase load speeds and will be implemented afterwards
 CREATE TABLE trip_data (
   ride_id varchar(255) NOT NULL,
-  rideable_type varchar(20),
+  rideable_type nvarchar(20),
   started_at datetime,
   ended_at datetime,
   ride_length time,
-  day_of_week varchar(20),
-  start_station_name varchar(100),
-  end_station_name varchar(100),
-  member_casual varchar(20)
+  day_of_week nvarchar(20),
+  start_station_name nvarchar(100),
+  end_station_name nvarchar(100),
+  member_casual nvarchar(20)
     );
 
 LOAD DATA INFILE '/ProgramData/MySQL/MySQL Server 8.0/Uploads/202204_tripdata.csv'
@@ -104,7 +104,7 @@ UPDATE trip_data SET member_casual = REPLACE(member_casual, '\r', '')
 WHERE member_casual LIKE '%\r';
 
 CREATE TABLE all_ride_info_per_day (
-	days_of_week varchar(30) NOT NULL,
+	days_of_week nvarchar(30) NOT NULL,
     member_count decimal(31,0) NULL,
     casual_count decimal(31,0)  NULL,
     total_ride_length decimal(31,0) NULL,
@@ -176,7 +176,7 @@ VALUES(
     );
     
 CREATE TABLE all_ride_info_per_month (
-	month_of_year varchar(30) NOT NULL,
+	month_of_year nvarchar(30) NOT NULL,
     member_count decimal(31,0) NULL,
     casual_count decimal(31,0)  NULL,
     total_ride_length decimal(31,0) NULL,
