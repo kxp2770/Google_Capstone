@@ -5,6 +5,7 @@ Skills used: Joins, CTE's, Windows Functions, Aggregate Functions, Creating View
 
 
 ```sql
+
 SELECT * 
 FROM CovidProject..CovidDeaths
 ORDER BY 3, 4
@@ -32,6 +33,12 @@ WHERE location LIKE '%states%' AND continent IS NOT NULL
 ORDER BY 1, 2
 
 
+Select Location, date, MAX(total_cases) as Highest_Infection_Count, Population, Max((total_cases/population))*100 as Percent_Population_Infected
+From CovidProject..CovidDeaths
+Group by Location, Population, date
+order by Percent_Population_Infected desc
+
+
 -- Looking at countries with highest infection rate compared to population 
 SELECT Location, MAX(total_cases) AS Highest_Infection_Count, Population, MAX((total_cases/population)*100) AS Infection_Percentage
 FROM CovidProject..CovidDeaths
@@ -53,7 +60,7 @@ ORDER BY Total_Death_Count DESC
 -- Showing total deaths count by continent and entire world
 SELECT location, MAX(CONVERT(int, total_deaths)) AS Total_Death_Count
 FROM CovidProject..CovidDeaths
-WHERE continent IS NULL
+WHERE continent IS NULL AND location NOT IN ('World', 'European Union', 'International')
 GROUP BY location
 ORDER BY Total_Death_Count DESC
 
@@ -76,6 +83,12 @@ ORDER BY Infection_Percentage DESC
 
 
 -- GLOBAL NUMBERS
+
+-- Showing total cases vs total deaths with % death chance
+SELECT SUM(new_cases) AS Total_cases, SUM(CAST(new_deaths as int)) AS Total_deaths, SUM(CAST(new_deaths as int))/SUM(new_cases)*100 AS Death_Rate_Percentage
+FROM CovidProject..CovidDeaths
+WHERE continent IS NOT NULL
+ORDER BY 1, 2
 
 -- Looking at total population vs vaccinations
 -- Instead of using total_vaccination column, creating a new column indicating same information for knowledge demostration of windows function
