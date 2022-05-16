@@ -1,4 +1,5 @@
-Image is dashboard created in Tableau using Covid data
+Image is dashboard created in Tableau using Covid data [from](https://ourworldindata.org/covid-deaths)    
+Complete dashboard can be access through [here](https://public.tableau.com/views/CovidProjectDashboard_16527344661030/Dashboard1?:language=en-US&:display_count=n&:origin=viz_share_link)
 
 
 
